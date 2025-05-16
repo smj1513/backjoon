@@ -9,8 +9,10 @@ for _ in range(10):
         if inputs[i] == 'I':
             y = int(inputs[i+2])
             sub_list.append(inputs[i:i+3+y])
-        if inputs[i] == 'D':
+        elif inputs[i] == 'D':
             sub_list.append(inputs[i:i+3])
+        elif inputs[i] == 'C':
+            sub_list.append(inputs[i:i+4])
     for sub in sub_list:
         for j in sub:
             if j == 'I':
